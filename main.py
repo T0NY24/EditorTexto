@@ -103,6 +103,7 @@ class NotePadApp:
         self.root.title("Bloc de Notas")  # Título de la ventana
         self.editor = EditorTexto()  # Creamos una instancia de EditorTexto
         self.setup_ui()  # Configuramos la interfaz de usuario
+        self.root.bind('<Control-v>', lambda e: self.pegar())
 
     def setup_ui(self):
         # Configuramos el tamaño de la ventana
@@ -121,12 +122,14 @@ class NotePadApp:
         btn_guardar = tk.Button(fr_buttons, text="Guardar Como", command=self.guardar_archivo)
         btn_deshacer = tk.Button(fr_buttons, text="Deshacer", command=self.deshacer)
         btn_rehacer = tk.Button(fr_buttons, text="Rehacer", command=self.rehacer)
+        btn_pegar = tk.Button(fr_buttons, text="Pegar", command=self.pegar)
 
         # Posicionamos los botones
         btn_abrir.grid(row=0, column=0, sticky="ew", padx=5, pady=5)
         btn_guardar.grid(row=1, column=0, sticky="ew", padx=5)
         btn_deshacer.grid(row=2, column=0, sticky="ew", padx=5, pady=5)
         btn_rehacer.grid(row=3, column=0, sticky="ew", padx=5)
+        btn_pegar.grid(row=4, column=0, sticky="ew", padx=5, pady=5)
 
         # Posicionamos el frame de botones
         fr_buttons.grid(row=0, column=0, sticky="ns")
@@ -194,6 +197,19 @@ class NotePadApp:
             text = self.pila_rehacer.pop()  # Obtenemos el estado siguiente
             self.editor.establecer_texto(text)  # Establecemos el texto siguiente
             self.actualizar_widget_texto()  # Actualizamos el widget de texto
+
+    def pegar(self):
+        try:
+            texto = self.root.clipboard_get()
+            index = self.txt_edit.index(tk.INSERT)
+            row, col = map(int, index.split('.'))
+            self.editor.mover_cursor(col)
+            for char in texto:
+                self.editor.insertar(char)
+            self.actualizar_widget_texto()
+            self.agregar_a_historial()
+        except tk.TclError:
+            pass  # El portapapeles está vacío
 
 # Creamos la ventana principal y ejecutamos la aplicación
 root = tk.Tk()
