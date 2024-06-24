@@ -1,6 +1,7 @@
-#  B:bookmark_tabs: Bloc de Notas Avanzado :bookmark_tabs:
+#  :bookmark_tabs: Bloc de Notas Avanzado :bookmark_tabs:
 
 Bienvenido al Bloc de Notas Avanzado, una aplicación de edición de texto simple, construida con Python y Tkinter, ¡y potenciada por una lista doblemente enlazada para un manejo eficiente del texto!
+
 <img src="https://user-images.githubusercontent.com/74038190/212257472-08e52665-c503-4bd9-aa20-f5a4dae769b5.gif"  width="100">
 
 ## :file_folder: Características :file_folder:
