@@ -47,6 +47,6 @@ Bienvenido al Bloc de Notas Avanzado, una aplicación de edición de texto simpl
 
 Para obtener información más detallada sobre cómo usar esta aplicación, por favor consulta nuestra guía de usuario completa en PDF:
 
-<a href="https://github.com/tu-usuario/bloc-de-notas-avanzado/raw/main/docs/guia_usuario.pdf" class="button" style="display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; transition: background-color 0.3s;">Descargar Guía de Usuario (PDF)</a>
+<a href="img/GPE2.pdf" class="button" style="display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; transition: background-color 0.3s;">Descargar Guía de Usuario (PDF)</a>
 
 Link del proyecto: [https://github.com/T0NY24/EditorTexto.git](https://github.com/T0NY24/EditorTexto.git):octocat:
