@@ -32,7 +32,7 @@ Bienvenido al Bloc de Notas Avanzado, una aplicación de edición de texto simpl
 <img src="img/EditorTexto.png" alt="Captura de pantalla 1" style="max-width: 100%;">
 
 
-## 🛠️ Tecnologías utilizadas
+## 🛠️ Tecnologías utilizadas 🛠️
 
 - Python 3.x
 - Tkinter
@@ -48,6 +48,6 @@ Bienvenido al Bloc de Notas Avanzado, una aplicación de edición de texto simpl
 
 Para obtener información más detallada sobre cómo usar esta aplicación, por favor consulta nuestra guía de usuario completa en PDF:
 
-<a href="img/GPE2.pdf" class="button" style="display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; transition: background-color 0.3s;">Descargar Guía de Usuario (PDF)</a>
+<a href="img/GPE2.pdf" class="button" style="display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; transition: background-color 0.3s;"> :wink: Descargar Guía de Usuario (PDF) :wink: </a>
 
-Link del proyecto: [https://github.com/T0NY24/EditorTexto.git](https://github.com/T0NY24/EditorTexto.git):octocat:
+Link del proyecto: :octocat: [https://github.com/T0NY24/EditorTexto.git](https://github.com/T0NY24/EditorTexto.git):octocat:
